@@ -1,0 +1,206 @@
+/* Enlazar la hoja de estilo con la fuente de Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+* {
+    /* Eliminar el margen y espaciado predeterminado de los elementos de la página */
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------------------------------
+    Selectores de estilo de tipo HTML
+    ---------------------------------- */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* Tipo de letra */
+    font-size: 15px;
+    /* Tamaño de letra */
+    font-weight: 400;
+    /* Grosor de letra */
+    color: #656565;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Marcellus SC', serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 45px;
+    font-family: 'Marcellus SC', serif;
+    font-weight: 400;
+    color: #262626;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 55px;
+    font-family: 'Marcellus SC', serif;
+    font-weight: 400;
+    color: #be9c79;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: 'Marcellus SC', serif;
+    font-weight: 400;
+    color: #262626;
+    padding-bottom: 10px;
+}
+
+h5 {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.5;
+    /* Interlineado */
+    padding-bottom: 10px;
+}
+
+/* -----------------------------------
+    Selectores de estilo de tipo ID
+    ---------------------------------- */
+
+#cabecera {
+    color: #fff;
+    /* Color del texto */
+    background-image: url("../img/fondocabecera.jpg");
+    /* Fondo de cabecera*/
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+#propuesta {
+    background-color: #fffcf9;
+    /* Color de fondo */
+    text-align: center;
+    /* Alinear texto */
+}
+
+#producto {
+    background-color: #fffcf9;
+    text-align: center;
+}
+
+#heraldo {
+    background-image: url("../img/fondo1.jpg");
+    /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#volante {
+    background-image: url("../img/flyer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#subtitulo {
+    text-align: left;
+}
+
+#number {
+    background-color: #fffcf9;
+    text-align: center;
+}
+
+#tienda {
+    background-image: url("../img/fondo2.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+#galeria {
+    background-color: #fffcf9;
+    text-align: center;
+}
+
+#espacioparrafo {
+    font-size: 19px;
+    padding-top: 10px;
+}
+
+#pie {
+    background-image: url("../img/fondo1.jpg");
+    background-position: center;
+}
+
+/* -----------------------------------
+    Selectores de estilo de tipo CLASS
+    ---------------------------------- */
+
+.espaciado {
+    padding-top: 40px;
+    /* Espacio superior entre el borde y el contenido */
+    padding-bottom: 40px;
+    /* Espacio inferior entre el borde y el contenido */
+}
+
+.contenedor {
+    max-width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.fila {
+    display: flex;
+    /* Activa Flexbox */
+    flex-direction: row;
+    /* Hace que los elementos hijos se muestre uno al lado de otro (fila) */
+}
+
+.columna {
+    flex-basis: 0px;
+    /* Reduce al mínimo el ancho del contenedor */
+    flex-grow: 1;
+    /* Hace que la caja crezca proporcionalmente */
+
+    /* Espaciado a la izquierda y derecha del contenedor */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.justificado {
+    text-align: center;
+}
+
+.img_ajustarancho {
+    width: 100%;
+    /* Ajusta el ancho al 100% del tamaño de su contenedor */
+    height: auto;
+    /* Ajusta la altura proporcionalmente al ancho */
+    padding-bottom: 15px;
+    /* Espacio superior entre las imágenes y el contenido */
+    padding-top: 10px;
+    /* Espacio inferior entre las imágenes y el contenido */
+}
+
+.separador {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
