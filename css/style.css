@@ -122,9 +122,18 @@ p {
     width: 100%;
 }
 
+#cabecera2 {
+    color: var(--color-blanco);
+    /* Color del texto */
+    background-image: url("../img/cabecera2.jpg");
+    /* Fondo de cabecera*/
+    background-position: center;
+    background-size: cover;
+}
+
 #logo {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 #propuesta {
@@ -176,6 +185,14 @@ p {
     padding-bottom: 40px;
 }
 
+#personal .fila img {
+    transition: all 0.2s ease-in-out;
+}
+
+#personal .fila img:hover {
+    filter: sepia(71%) saturate(60%);
+}
+
 #volante {
     background-image: url("../img/flyer.jpg");
     background-size: cover;
@@ -197,6 +214,11 @@ p {
     text-align: center;
 }
 
+#tienda .fila img:hover {
+    transform: scale(118%);
+    transition: all 0.4s ease-in-out;
+}
+
 #galeria {
     background-color: var(--color-palido);
     text-align: center;
@@ -204,6 +226,14 @@ p {
 
 #galeria .fila-baja {
     padding-bottom: 40px;
+}
+
+#galeria .fila img {
+    transition: all 0.2s ease-in-out;
+}
+
+#galeria .fila img:hover {
+    filter: grayscale(82%) saturate(200%);
 }
 
 #contacto {
@@ -235,6 +265,41 @@ p {
     text-align: center;
 }
 
+#barra-ubicacion {
+    background-image: url("../img/imagen1.jpg");
+    color: var(--color-blanco);
+    text-align: center;
+    background-size: cover;
+}
+
+#barra-ubicacion2 {
+    background-image: url("../img/imagen2.jpg");
+    color: var(--color-blanco);
+    text-align: center;
+    background-size: cover;
+}
+
+#barra-ubicacion3 {
+    background-image: url("../img/imagen3.jpg");
+    color: var(--color-blanco);
+    text-align: center;
+    background-size: cover;
+}
+
+#barra-ubicacion4 {
+    background-image: url("../img/imagen4.jpg");
+    color: var(--color-blanco);
+    text-align: center;
+    background-size: cover;
+}
+
+#barra-ubicacion5 {
+    background-image: url("../img/imagen5.jpg");
+    color: var(--color-blanco);
+    text-align: center;
+    background-size: cover;
+}
+
 /* -----------------------------------
     Selectores de estilo de tipo CLASS
     ---------------------------------- */
@@ -256,6 +321,14 @@ p {
     margin-right: auto;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.contenedor-ubicacion {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .contenedor-contacto {
@@ -372,6 +445,10 @@ p {
     color: var(--color-blanco);
 }
 
+/* -------------------------------------------
+    Estilos para configurar el footer
+    ----------------------------------------- */
+
 .footer-autor p {
     font-weight: 200;
     padding: 10px;
@@ -413,26 +490,97 @@ p {
     color: var(--color-beige);
 }
 
-.navegador {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* -------------------------------------------
+    Estilos para configurar la barra de menú
+    ----------------------------------------- */
+
+.contenedor-nav {
+    padding: 10px 0;
 }
 
-.navegador a {
+.menu-barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-opciones {
+    list-style: none;
+}
+
+.menu-opciones a {
     text-decoration: none;
     color: var(--color-blanco);
     font-family: var(--fuente-principal);
     font-size: 15px;
 }
 
-.navegador li {
-    margin: 0 20px;
+.menu-opciones a:hover {
+    text-decoration: underline;
 }
 
-.navegador a:hover {
-    text-decoration: underline;
+.menu-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-items li {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* --------------------------------------------------------
+    Estilos para configurar la barra de opciones superior
+    ------------------------------------------------------ */
+
+.contenedor-barra-sup{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-barra-sup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-informacion {
+    list-style: none;
+}
+
+.menu-informacion li {
+    padding: 5px 20px;
+}
+
+.items-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-family: var(--fuente-secundaria);
+    color: var(--color-blanco);
+}
+
+.items-info a {
+    text-decoration: none;
+    color: var(--color-blanco);  
+}
+
+.items-info a:hover {
+    color: var(--color-beige);
+}
+
+.menu-redes-sup a {
+    text-decoration: none;
+    color: var(--color-blanco);
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+.menu-redes-sup a:hover {
+    color: var(--color-beige);
 }
 
 
