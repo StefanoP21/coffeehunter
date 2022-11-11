@@ -190,6 +190,7 @@ p {
 }
 
 #personal .fila img:hover {
+    transform: scale(103%);
     filter: sepia(71%) saturate(60%);
 }
 
@@ -214,9 +215,12 @@ p {
     text-align: center;
 }
 
+#tienda .fila img {
+    transition: all 0.4s ease-in-out;
+}
+
 #tienda .fila img:hover {
     transform: scale(118%);
-    transition: all 0.4s ease-in-out;
 }
 
 #galeria {
@@ -233,6 +237,7 @@ p {
 }
 
 #galeria .fila img:hover {
+    transform: scale(103%);
     filter: grayscale(82%) saturate(200%);
 }
 
@@ -257,6 +262,11 @@ p {
 
 #hunters p {
     color: var(--color-blanco);
+}
+
+#contenedor-hunters img:hover {
+    transform: scale(103%);
+    filter: sepia(71%) saturate(60%);
 }
 
 #pie {
@@ -429,11 +439,22 @@ p {
     text-align:center;
     box-shadow: 5px 5px var(--color-marron);
     margin-top:-60px;
+    transition: all 0.2s ease-in-out;
 }
 
 .caja-contacto:hover {
     background-color: var(--color-negro);
     border:1px solid var(--color-negro);
+    font-family: var(--fuente-secundaria);
+    font-size: 15px;
+    display: inline-block;
+    padding: 20px 40px;
+    border: 5px;
+    color:var(--color-blanco);
+    text-align:center;
+    box-shadow: 5px 5px var(--color-marron);
+    margin-top:-60px;
+    transform: scale(105%);
 }
 
 .caja-email {
@@ -445,30 +466,57 @@ p {
     color: var(--color-blanco);
 }
 
+.caja-over {
+    overflow: hidden;
+    height: auto;
+}
+
 /* -------------------------------------------
     Estilos para configurar el footer
     ----------------------------------------- */
 
+.footer-nav {
+    padding: 10px;
+    transition: all 0.2s ease-in;
+}
+
+/*© 2022 Grupo 4, Todos los derechos reservados*/
 .footer-autor p {
     font-weight: 200;
     padding: 10px;
     font-size: 16px;
 }
 
-.footer-nav {
-    padding: 10px;
-}
-
+/*INICIO*/
 .footer-nav a {
     text-decoration: none;
     color: var(--color-blanco);
     font-size: 16px;
+    position: relative;
 }
 
 .footer-nav a:hover {
     color: var(--color-beige);
 }
 
+/*INICIO - SUBRAYADO*/
+.footer-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: all 0.25s ease-in; 
+}
+
+.footer-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/*REDES SOCIALES*/
 .footer-redes {
     list-style: none;
     display: flex;
@@ -478,6 +526,11 @@ p {
 
 .footer-redes li {
     margin: 0 10px;
+    transition: all 0.2s ease-out;
+}
+
+.footer-redes li:hover{
+    transform: scale(115%);
 }
 
 .footer-redes a {
