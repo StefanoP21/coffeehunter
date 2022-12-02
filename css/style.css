@@ -38,6 +38,11 @@
     Selectores de estilo de tipo HTML
     ---------------------------------- */
 
+html {
+    /* SUAVIZA EL DESPLAZAMIENTO DEL SCROLL EN LA PÁGINA */
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--fuente-secundaria);
     /* Tipo de letra */
@@ -114,8 +119,6 @@ p {
 #cabecera {
     color: var(--color-blanco);
     /* Color del texto */
-    background-image: url("../img/cabecera.jpg");
-    /* Fondo de cabecera*/
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -129,6 +132,24 @@ p {
     /* Fondo de cabecera*/
     background-position: center;
     background-size: cover;
+}
+
+#cabecera-sticky {
+    color: var(--color-blanco);
+    /* Color del texto */
+    background-image: url("../img/cabecera2.jpg");
+    /* Fondo de cabecera*/
+    background-position: center;
+    background-size: cover;
+    
+    /* Posicionamiento pegajoso (Sticky) */
+    position: sticky;
+
+    /* Coordenadas de posicioanmiento */
+    top: 0;
+    
+    /* Posicionar la caja encima de las demás */
+    z-index: 100;
 }
 
 #logo {
@@ -308,6 +329,20 @@ p {
     color: var(--color-blanco);
     text-align: center;
     background-size: cover;
+}
+
+#scroll-arriba {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #cea277;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: var(--color-marron);
+    font-size: 22px;
 }
 
 /* -----------------------------------
@@ -636,4 +671,303 @@ p {
     color: var(--color-beige);
 }
 
+/* -------------------------------------------
+    Selectores de estilo de portfolio-gallery
+    ----------------------------------------- */
 
+#portfolio-gallery {
+    background-color: var(--color-palido);
+}
+
+#portfolio-gallery p {
+    font-family: var(--fuente-principal);
+    color: var(--color-blanco);
+    font-size: 35px;
+    font-weight: 300;
+}
+
+#portfolio-gallery img {
+    display: block;
+}
+
+#portfolio-gallery .contenedor {
+    max-width: 95%;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#portfolio-gallery .fila {
+    margin-bottom: 30px;
+}
+
+#portfolio-gallery .columna {
+    padding-left: 5px;
+}
+
+#portfolio-gallery  img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-foto{
+    position: relative;
+}
+
+.portfolio-foto-descripcion {
+    position: absolute;
+    top: 0;
+    background-color: rgba(13, 13, 13, 0.6);
+    width: 100%;
+    height: 100%;
+
+    /* Centrar verticalmente */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* Centrar horizontalmente */
+    justify-content: center;
+    text-align: center;
+
+    /* Ocultar la caja */
+    opacity: 0;
+
+    /* Transición de la opacidad */
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio-foto-descripcion:hover {
+    opacity: 1;
+}
+
+/* ---------------------------------
+    Selectores de estilo de tienda
+    ------------------------------- */
+
+#cafe {
+    background-color: var(--color-blanco);
+}
+    
+#tienda2 .fila img {
+    transition: all 0.4s ease-in-out;
+}
+
+#tienda2 .fila img:hover {
+    transform: scale(118%);
+}
+
+.contenedor-barra-sup1{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.fondo-video {
+    position: absolute;
+    z-index: -1;
+}
+
+video {
+    display: block;
+}
+
+.video-responsive {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.textovideo {
+    color: var(--color-blanco);
+}
+
+.contenedor-añadir {
+    max-width: 83%;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.contenedor2 {
+    margin-right: auto;
+    padding-top: 25px;
+}
+
+.contenedor-ranking {
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: auto;
+    color: var(--color-beige);
+}
+
+.caja-añadir {
+    font-family: var(--fuente-secundaria);
+    font-size: 12px;
+    display: inline-block;
+    padding: 20px 30px;
+    border: 5px;
+    color:var(--color-blanco);
+    background-color: var(--color-beige);
+    text-align:center;
+    margin-top:-60px;
+    transition: all 0.2s ease-in-out;
+}
+
+.caja-añadir:hover {
+    background-color: var(--color-negro);
+    border:1px solid var(--color-negro);
+    font-family: var(--fuente-secundaria);
+    font-size: 12px;
+    display: inline-block;
+    padding: 20px 30px;
+    border: 5px;
+    color:var(--color-blanco);
+    text-align:center;
+    margin-top:-60px;
+    transform: scale(105%);
+}
+
+/* TIENDA 2 */
+
+#tienda2 {
+    background-color: var(--color-blanco);
+    text-align: center;
+}
+
+#textoparraf {
+    color: var(--color-gris);
+}
+
+.texto-bold {
+    color: var(--color-negroleve);
+    font-weight: 500;
+}
+
+.texto2 {
+    font-size: 35px;
+}
+
+.textoparraf {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--color-gris);
+}
+
+/* ------------------------------
+    Selectores de estilo de menu
+    ---------------------------- */
+
+#caliente {
+    background-color:#fffcf9;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+#frio {
+    background-image: url("../img/fondo1.jpg");
+    text-align: center;
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 50px;
+}
+
+.caja{
+    padding: 1em;
+}
+
+.caja:nth-child(1) p{
+    padding-right: 130px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.caja:nth-child(2) p{
+    padding-right: 130px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.caja:nth-child(3) p{
+    padding-right: 130px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.caja:nth-child(4) p{
+    padding-right: 130px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.caja:nth-child(5) p{
+    padding-right: 130px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.caja:nth-child(6) p{
+    padding-right: 130px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.caja:nth-child(7) p{
+    padding-right: 130px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.caja:nth-child(8) p{
+    padding-right: 130px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.caja:nth-child(9) p{
+    padding-right: 130px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.caja:nth-child(10) p{
+    padding-right: 130px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/* ----------------------------------
+    Selectores de estilo de nosotros
+    -------------------------------- */
+
+.columna-nosotros {
+    flex-basis: 0px;
+    /* Reduce al mínimo el ancho del contenedor */
+    flex-grow: 1;
+    /* Hace que la caja crezca proporcionalmente */
+
+    /* Espaciado a la izquierda y derecha del contenedor */
+    padding-left: 20px;
+    padding-right: 20px;
+    vertical-align: baseline;
+}
+
+.columna-nosotros h2 {
+    color: var(--color-negro);
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.separador-nosotros {
+    padding-top: 1px;
+    padding-bottom: 30px;
+    padding-left: 34%;
+}
+
+#extencion-programas {
+    background-color: var(--color-palido);
+}

@@ -13,7 +13,13 @@
   </head>
 
   <body>
-    <header id="cabecera" class="espaciado-cabecera">
+    <header>
+      <div  id="cabecera" class="fondo-video">
+        <video loop autoplay muted class="video-responsive">
+          <source src="video/videocafe22.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- fondo-video --> 
       <div class="contenedor-barra-sup">
         <div class="menu-barra-sup">
           <ul class="menu-informacion">
@@ -78,7 +84,7 @@
       <!-- Contenedor-nav -->
 
       <div class="espaciado">
-        <div id="logo">
+        <div id="logo" class="textovideo">
           <img src="img/icon.png" alt="icon" class="icon_ajustar">
           <h1>COFFEE HUNTERS</h1>
           <img src="img/slider-separator.png" alt="separador" class="separador">
@@ -501,5 +507,10 @@
       <!-- contenedor -->
     </footer>
     <!-- pie -->
+
+    <!-- Botón para ir rápidamente al inicio de la página -->
+    <a id="scroll-arriba" href="#"> 
+      <i class="fa-solid fa-arrow-up"></i> 
+    </a>
   </body>
 </html>

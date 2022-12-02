@@ -54,41 +54,126 @@
         <!-- menu-barra-sup-->
       </div>
       <!-- contenedor-barra-sup -->
+    </header>
+    <!-- cabecera2 -->
       
-      <div class="contenedor-nav">
-        <nav class="menu-barra">
-          <a href="index.html">
-            <img src="img/logo-cabecera2.png" alt="logo" class="img_ajustar_nav">
-          </a>
-          <ul class="menu-opciones">
-            <div class="menu-items">
-              <li><a href="index.html">INICIO</a></li>
-              <li><a href="nosotros.html">NOSOTROS</a></li>
-              <li><a href="menu.html">MENÚ</a></li>
-              <li><a href="tienda.html">TIENDA</a></li>
-              <li><a href="galeria.html">GALERÍA</a></li>
-              <li><a href="contacto.html">CONTACTO</a></li>
-            </div>
-            <!-- menu-items -->
-          </ul>
-          <!-- menu-opciones -->
-        </nav>
-        <!-- menu-barra -->
-      </div>
-      <!-- Contenedor-nav -->
-      <main>
-        <section id="barra-ubicacion3" class="espaciado">
-          <div class="contenedor-ubicacion">
-              <h1>Nuestra Tienda</h1>
-              <p class="texto">
-                  <i class="fa-solid fa-location-dot"></i>
-                  Inicio > Tienda
-              </p>
-          </div> 
-          <!-- contenedor-ubicacion -->
+    <main>
+      <section id="cabecera-sticky">
+        <div class="contenedor-nav">
+          <nav class="menu-barra">
+            <a href="index.html">
+              <img src="img/logo-cabecera2.png" alt="logo" class="img_ajustar_nav">
+            </a>
+            <ul class="menu-opciones">
+              <div class="menu-items">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="galeria.html">GALERÍA</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+              </div>
+              <!-- menu-items -->
+            </ul>
+            <!-- menu-opciones -->
+          </nav>
+          <!-- menu-barra -->
+        </div>
+        <!-- Contenedor-nav -->
+      </section>
+      <!-- Cabecera-sticky -->
+
+      <section id="barra-ubicacion3" class="espaciado">
+        <div class="contenedor-ubicacion">
+            <h1>Nuestra Tienda</h1>
+            <p class="texto">
+                <i class="fa-solid fa-location-dot"></i>
+                Inicio > Tienda
+            </p>
+        </div> 
+        <!-- contenedor-ubicacion -->
       </section> 
       <!-- barra-ubicación -->
-      </main>
+
+      <section id="cafe" class="espaciado">
+        <div class="contenedor" > 
+          <div class="fila">
+            <div class="columna">
+              <img src="img/productotienda.png" loading="lazy" class="img_ajustarancho">
+            </div> 
+            <!-- columna -->
+            <div class="columna">
+              <h2 class="texto2">ALTO INAMBARI</h2>
+              <p class="textoparraf">$21.00</p>
+              <div class="contenedor-ranking">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- contenedor-ranking -->
+              <div class="contenedor2">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br>
+                  commodo ligula eget dolor. Aenean massa. Cum sociis natoque <br>
+                  penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+              </div> 
+              <!-- contenedor2 -->
+              <div class="contenedor-añadir">
+                <button class="caja-añadir">
+                  AÑADIR AL CARRITO
+                </button>
+              </div> 
+              <!-- contenedor-añadir -->
+              <div class="contenedor2">
+                <p> <span class="texto-bold">SKU:</span> PR111 </p>
+                <P> <span class="texto-bold">CATEGORÍA:</span> Fresh Coffe </P>
+                <p> <span class="texto-bold">TAG:</span> Black, Casual, Classic </p>
+                <P> <span class="texto-bold">GUARDAR:</span> <i class="fa-brands fa-facebook"></i> 
+              <i class="fa-brands fa-instagram"></i> 
+              <i class="fa-brands fa-twitter"></i></P>
+              </div>
+              <!-- contenedor2 -->
+            </div> 
+            <!-- columna -->
+          </div> 
+          <!-- fila -->
+        </div> 
+        <!-- contenedor -->
+      </section> 
+      <!-- cafe -->
+
+      <section id="tienda2">
+        <div class="contenedor">
+          <h2 class="texto2" style="text-align:left;">TIENDA ONLINE</h2>
+          <div id="textoparraf" class="fila">
+            <div class="columna">
+              <img src="img/hunters1.png" alt="hunters 1" class="img_ajustarancho" loading="lazy">
+              <h4>LA PALESTINA</h4>
+              <p>$15.00</p>
+            </div>
+            <!-- columna -->
+            <div class="columna">
+              <img src="img/hunters2.png" alt="hunters 2" class="img_ajustarancho" loading="lazy">
+              <h4>HUANUCO</h4>
+              <p>$18.00</p>
+            </div>
+            <!-- columna -->
+            <div class="columna">
+              <img src="img/hunters4.png" alt="hunters 4" class="img_ajustarancho" loading="lazy">
+              <h4>GEISHA</h4>
+              <p>$25.00</p>
+            </div>
+            <!-- columna -->
+          </div>
+          <!-- fila -->
+        </div>
+        <!-- contenedor -->
+      </section>
+      <!-- tienda2 -->
+    </main>
 
     <footer id="pie">
       <div class="contenedor">
@@ -133,5 +218,10 @@
       <!-- contenedor -->
     </footer>
     <!-- pie -->
+
+    <!-- Botón para ir rápidamente al inicio de la página -->
+    <a id="scroll-arriba" href="#"> 
+      <i class="fa-solid fa-arrow-up"></i> 
+    </a>
   </body>
 </html>
