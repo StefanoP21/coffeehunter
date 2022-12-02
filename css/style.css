@@ -112,6 +112,10 @@ p {
     padding-bottom: 10px;
 }
 
+iframe {
+    display: block;
+}
+
 /* -----------------------------------
     Selectores de estilo de tipo ID
     ---------------------------------- */
@@ -968,6 +972,67 @@ video {
     padding-left: 34%;
 }
 
+.columna-nosotros p {
+    color: var(--color-negro);
+    padding: 30px;
+    text-align: center;
+}
+
 #extencion-programas {
     background-color: var(--color-palido);
 }
+
+/* ----------------------------------
+    Selectores de estilo de contacto
+    -------------------------------- */
+
+.contenedor-nuevo {
+    margin-right: auto;
+    padding-top: 10px;
+    color: var(--color-gris);
+}
+
+.contacto {
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+.form-campo {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-beige);
+    outline: none;
+    font: inherit;
+}
+
+#mensaje {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--color-beige);
+    outline: none;
+    font: inherit;
+}
+
+.boton-enviar {
+    background-color: var(--color-beige);
+    color: var(--color-blanco);
+    padding: 5px 5px;
+    width: 20%;
+    height: 50px;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton-enviar:hover {
+    background-color: var(--color-negro);
+}
+
+.mapa-responsive {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+}
+
